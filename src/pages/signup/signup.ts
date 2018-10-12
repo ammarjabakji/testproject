@@ -50,4 +50,7 @@ export class SignupPage {
       toast.present();
     });
   }
+  login() {
+    this.navCtrl.push('LoginPage');
+  }
 }

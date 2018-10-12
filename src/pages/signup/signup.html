@@ -8,13 +8,23 @@
 
 
 <ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 text-center="">
+        <button  ion-button class="signin-link" color="dark" clear (click)="login()">SIGNIN</button>
+        <button  ion-button class="active" signup-link color="dark" clear>REGESTER</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <form (submit)="doSignup()">
     <ion-list>
 
-      <ion-item>
-        <ion-label fixed>{{ 'NAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
-      </ion-item>
+      <!--<ion-item>-->
+        <!--<ion-label fixed>{{ 'NAME' | translate }}</ion-label>-->
+        <!--<ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>-->
+      <!--</ion-item>-->
 
       <ion-item>
         <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
@@ -36,9 +46,19 @@
       </ion-item>
 
       <div padding>
-        <button ion-button color="primary" block>{{ 'SIGNUP_BUTTON' | translate }}</button>
+        <button ion-button color="primary" large block>{{ 'SIGNUP_BUTTON' | translate }}</button>
       </div>
-
     </ion-list>
   </form>
+
+  <hr class="hr-text" data-content="OR">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 text-center="">
+        <button class="social-media" ion-button color="dark" clear> <img src="../assets/img/G.svg" />Google</button>
+        <button class="social-media" ion-button color="dark" clear> <ion-icon name="logo-facebook"></ion-icon> Facebook </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

@@ -32,5 +32,57 @@ page-tutorial {
       color: #000000;
     }
   }
+  ion-content{
+    background: $background-image !important;
+  }
 
+
+  ion-slides {
+    position: relative;
+    background-color: $background-color;
+    width: 96%;
+    height: 94%;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 6px 28px 11px #ad1f49;
+    margin-top: 15px !important;
+  }
+
+  ion-card {
+    position: absolute !important;
+    width: 5% !important;
+    margin: 0 !important;
+    top: 0 !important;
+    height: 96% !important;
+    z-index: 11 !important;
+    border-radius: 0px 10px 10px 0px !important;
+    box-shadow: 0px -8px 20px 12px rgba(0, 0, 0, 0.12) !important;
+    margin-top: 2px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #f01759 !important;
+    opacity: 1;
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .swiper-pagination-bullet {
+    background: #323232;
+    opacity: 1;
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)  {
+    ion-card {
+      height: 95% !important;
+    }
+  }
 }
+
+
+

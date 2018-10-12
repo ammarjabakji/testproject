@@ -8,6 +8,16 @@
 
 
 <ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 text-center="">
+        <button  ion-button class="active" color="dark" clear >SIGNIN</button>
+        <button  ion-button class="signin-link" signup-link color="dark" clear (click)="signup()">REGESTER</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <form (submit)="doLogin()">
     <ion-list>
 
@@ -30,9 +40,24 @@
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
+      <ion-item>
+        <ion-toggle checked="ture"></ion-toggle>
+        <ion-label>Remember me?</ion-label>
+      </ion-item>
+
       <div padding>
-        <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+        <button ion-button color="primary" large block>{{ 'LOGIN_BUTTON' | translate }}</button>
       </div>
+
+      <hr class="hr-text" data-content="OR">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 text-center="">
+            <button class="social-media" ion-button color="dark" clear> <img src="../assets/img/G.svg" />Google</button>
+            <button class="social-media" ion-button color="dark" clear> <ion-icon name="logo-facebook"></ion-icon> Facebook </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
     </ion-list>
   </form>
