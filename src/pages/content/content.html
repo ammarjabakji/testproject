@@ -1,13 +1,141 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Content
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>
+			Content
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <p>
-    This is a perfect starting point for a page with primarily text content. The body is padded nicely and ready for prose.
-  </p>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<button ion-button clear float-left>
+					<ion-icon name="search"></ion-icon>
+				</button>
+			</ion-col>
+			<ion-col>
+				<h2> Discover</h2>
+			</ion-col>
+			<ion-col>
+				<button ion-button clear float-right>
+					<ion-icon name="basket"></ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<div text-center>
+		<img src="assets/img/books.jpg" class="featuredimg"/>
+		<ion-card>Some long text Some long text Some long text Some long text Some</ion-card>
+	</div>
+
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<h2> Book of the week</h2>
+			</ion-col>
+			<ion-col>
+				<button ion-button clear float-right>All</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-slides slidesPerView="2.6">
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+	</ion-slides>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<h2> Recommendations</h2>
+			</ion-col>
+			<ion-col>
+				<button ion-button clear float-right>All</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-slides class="slide3d" slidesPerView="2.6" spaceBetween="1" centeredSlides>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<h2 class="slide-title">Fahrenheit 541</h2>
+			<p> Book Description </p>
+		</ion-slide>
+	</ion-slides>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<h2> Popular</h2>
+			</ion-col>
+			<ion-col>
+				<button ion-button clear float-right>All</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-slides class="slidecard" slidesPerView="1.13" spaceBetween="16">
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<ion-card>
+				<h2 class="slide-title">Fahrenheit 541</h2>
+				<p> Book Description Book Description Book Description Book Description Book Description Book Description </p>
+			</ion-card>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<ion-card>
+				<h2 class="slide-title">Fahrenheit 541</h2>
+				<p> Book Description Book Description Book Description Book Description Book Description Book Description </p>
+			</ion-card>
+		</ion-slide>
+		<ion-slide>
+			<img src="assets/img/testbook.jpg" class="slide-image"/>
+			<ion-card>
+				<h2 class="slide-title">Fahrenheit 541</h2>
+				<p> Book Description Book Description Book Description Book Description Book Description Book Description </p>
+			</ion-card>
+		</ion-slide>
+	</ion-slides>
+
 </ion-content>
