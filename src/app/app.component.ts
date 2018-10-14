@@ -9,7 +9,7 @@ import {Settings} from '../providers';
 
 @Component({
   template: `
-    <ion-menu [content]="content">
+    <ion-menu [content]="content" side="right">
       <ion-header>
         <ion-toolbar>
           <ion-title>Pages</ion-title>
