@@ -14,7 +14,7 @@
 	<ion-grid>
 		<ion-row>
 			<ion-col>
-				<button ion-button clear float-left>
+				<button ion-button clear float-right>
 					<ion-icon name="search"></ion-icon>
 				</button>
 			</ion-col>
@@ -22,7 +22,7 @@
 				<h2> Discover</h2>
 			</ion-col>
 			<ion-col>
-				<button ion-button clear float-right>
+				<button ion-button clear float-left>
 					<ion-icon name="basket"></ion-icon>
 				</button>
 			</ion-col>
@@ -30,7 +30,7 @@
 	</ion-grid>
 
 	<div class="featuredimg" text-center>
-		<img src="assets/img/books.jpg" />
+		<img src="assets/img/books.jpg"/>
 		<ion-card>Some long text Some long text Some long text Some long text Some</ion-card>
 	</div>
 
@@ -41,14 +41,14 @@
 				<h2> Book of the week</h2>
 			</ion-col>
 			<ion-col>
-				<button ion-button clear float-right>All</button>
+				<button ion-button clear float-left>All</button>
 			</ion-col>
 		</ion-row>
 	</ion-grid>
 
 	<ion-slides slidesPerView="2.6" dir="rtl">
 		<ion-slide *ngFor="let slide of slides">
-			<img [src]="slide.image" class="slide-image" />
+			<img [src]="slide.image" class="slide-image"/>
 			<h2 class="slide-title" [innerHTML]="slide.title"></h2>
 			<p [innerHTML]="slide.description"></p>
 		</ion-slide>
@@ -60,7 +60,7 @@
 				<h2> Recommendations</h2>
 			</ion-col>
 			<ion-col>
-				<button ion-button clear float-right>All</button>
+				<button ion-button clear float-left>All</button>
 			</ion-col>
 		</ion-row>
 	</ion-grid>
@@ -84,12 +84,12 @@
 		<ion-slide>
 			<img src="assets/img/testbook.jpg" class="slide-image"/>
 			<!--<h2 class="slide-title">Fahrenheit 541</h2>-->
-			<p> Book Description Book Description Book Description Book  </p>
+			<p> Book Description Book Description Book Description Book </p>
 		</ion-slide>
 		<ion-slide>
 			<img src="assets/img/testbook.jpg" class="slide-image"/>
 			<!--<h2 class="slide-title">Fahrenheit 541</h2>-->
-			<p> Book Description Book Description Book Description Book  </p>
+			<p> Book Description Book Description Book Description Book </p>
 		</ion-slide>
 	</ion-slides>
 
@@ -99,7 +99,7 @@
 				<h2> Popular</h2>
 			</ion-col>
 			<ion-col>
-				<button ion-button clear float-right>All</button>
+				<button ion-button clear float-left>All</button>
 			</ion-col>
 		</ion-row>
 	</ion-grid>
@@ -128,4 +128,42 @@
 		</ion-slide>
 	</ion-slides>
 
+
+	<div class="singleimg" text-center>
+		<img src="assets/img/testbook.jpg"/>
+	</div>
+
+
+	<ion-grid class="bookinfo">
+		<ion-row>
+			<ion-col text-center>
+				<h2> Kitab Cool</h2>
+				<button ion-button clear>Ahmad Author</button>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+				<ion-col text-center>
+					<ionic3-star-rating
+							activeIcon="ios-star"
+							defaultIcon="ios-star-outline"
+							activeColor="#488aff"
+							defaultColor="#f4f4f4"
+							readonly="false"
+							[rating]="3">
+					</ionic3-star-rating>
+				</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+					مثل هذا النص أو العديد من النصوص الأخرى إضافة ...
+			</ion-col>
+		</ion-row>
+		<button ion-button clear>المزيد</button>
+	</ion-grid>
+
+	<div class="price" text-center>
+		<h1>$30<span>34</span></h1>
+	</div>
 </ion-content>

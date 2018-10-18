@@ -3,6 +3,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { IonicPageModule } from 'ionic-angular';
 
 import { ContentPage } from './content';
+import { StarRatingModule } from 'ionic3-star-rating';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { ContentPage } from './content';
   ],
   imports: [
     IonicPageModule.forChild(ContentPage),
-    TranslateModule.forChild()
+    TranslateModule.forChild(),
+    StarRatingModule
   ],
   exports: [
     ContentPage

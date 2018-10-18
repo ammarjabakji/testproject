@@ -81,8 +81,12 @@ page-content {
   img {
     border-radius: 10px;
   }
-  .featuredimg img{
+  .featuredimg img,
+  .singleimg img {
     box-shadow: 0 20px 50px 0 rgba(37, 40, 51, 0.15);
+  }
+  .singleimg img {
+    width: 50%;
   }
 
   button.button-clear {
@@ -143,4 +147,38 @@ page-content {
     }
   }
 
+  .bookinfo {
+    margin-top: 20px;
+  }
+  .bookinfo ion-icon {
+    color:#FFBE47 !important;
+    font-size: 16px !important;
+  }
+  .ionic3-star-rating[_ngcontent-c0] .button[_ngcontent-c0] {
+    height: 14px;
+    width: 14px;
+  }
+  .bookinfo .ionic3-star-rating {
+    background-color: #f6f6f6;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  .icon-ios.ion-ios-star-outline,.icon-md.ion-ios-star-outline{
+    color: #dfdfdf !important;
+  }
+  .ion-ios-star-outline:before,.icon-md.ion-ios-star-outline:before {
+    content: "\f4b3" !important;
+  }
+  .price{
+    background: #f6f6f6;
+    padding: 12px;
+    margin: 10px -16px 10px -16px;
+  }
+  .price span {
+    color: #7a7a7a;
+    margin: 16px;
+    text-decoration: line-through;
+    font-size: 22px;
+  }
 }
