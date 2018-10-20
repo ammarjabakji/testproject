@@ -98,7 +98,7 @@ page-content {
     font-size: 30px !important;;
   }
 
-  ion-card.card {
+  .featuredimg ion-card.card {
     font-family: GothamMedium;
     position: relative;
     bottom: 60px;
@@ -108,7 +108,7 @@ page-content {
     margin: 0 auto;
     line-height: 1.3;
     padding: 5px;
-    text-align: left;
+    text-align: right;
     font-size: 16px;
   }
   //.slidecard ion-slide{
@@ -124,7 +124,7 @@ page-content {
     border-radius: 8px;
     padding-left: 117px;
     padding-top: 20px;
-    margin-top: 70px;
+    margin-top: 0px;
     box-shadow: 0 20px 50px 0 rgba(37, 40, 51, 0.15);
   }
   .slidecard img {
@@ -180,5 +180,24 @@ page-content {
     margin: 16px;
     text-decoration: line-through;
     font-size: 22px;
+  }
+  .savelater ion-icon{
+    margin-right: 15px;
+  }
+  .getbook{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+    font-size: 18px !important;
+    width: 135px !important;
+    height: 55px !important;
+    margin-top: -5px;
+    margin-left: 12px;
+  }
+  ion-label p{
+    font-size: 12px;
+  }
+  .item-md {
+    margin-bottom: 0px;
+    padding-bottom: 0px !important;
   }
 }
